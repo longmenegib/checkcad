@@ -21,7 +21,7 @@ export default function Home() {
         
         <Testimonial />
 
-        <PageLoading/>
+        {/* <PageLoading/> */}
         
         <Footer />
     </div>

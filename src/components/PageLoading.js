@@ -3,13 +3,11 @@ import './pageloading.css'
 
 import { ThreeDots } from  'react-loader-spinner'
 
-export default function PageLoading() {
-    const [showModal, setShowModal] = useState(false);
+export default function PageLoading({showloadModal, saveFile}) {
+
     const startProcessing=()=>{
-        setShowModal(true)   
-        setTimeout(() => {
-            setShowModal(false);
-        }, 3000);
+         
+        saveFile();
         
     }
   return (
@@ -21,15 +19,15 @@ export default function PageLoading() {
     >
       Submit
     </button>
-    {showModal ? (
+    {showloadModal ? (
       <>
         <div className="pagee flex justify-center items-center overflow-x-hidden overflow-y-none fixed inset-0 z-50 outline-none focus:outline-none">
           <div className="relative w-full my-6 mx-auto max-w-3xl flex justify-center items-center">
-            <div className="flex justify-center items-center">
+            {/* <div className="flex justify-center items-center">
                 <div className="spinner-grow inline-block w-8 h-8 bg-current rounded-full opacity-0" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>
-            </div>
+            </div> */}
 
             <ThreeDots
     height="100"
