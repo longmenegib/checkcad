@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PageLoading from "./PageLoading";
 import './checkmodal.css'
 
-import Camera from 'react-html5-camera-photo';
+import Camera, {FACING_MODES, IMAGE_TYPES} from 'react-html5-camera-photo';
 import 'react-html5-camera-photo/build/css/index.css';
 
 import axios from "axios";
@@ -50,7 +50,7 @@ const Modal = () => {
 
     console.log(filedata)
     // return
-    await axios.post(`http://checkcad-backend.herokuapp.com/checkcardblanced/`, filedata, { timeout: 10000, headers: {"Content-Type": "multipart/form-data"}  })
+    await axios.post(`https://checkcad-backend.herokuapp.com/checkcardblanced/`, filedata, { timeout: 10000, headers: {"Content-Type": "multipart/form-data"}  })
     .then(async res => {
         console.log("certificate saved");
         setShowModal(false);
@@ -58,7 +58,7 @@ const Modal = () => {
           setTimeout(() => {
             setShowloadModal(false);
         }, 10000);
-        // return true;
+        alert("Your Card is validated and authenticated. Thanks for trusting us...")
     })
     .catch(err => {
         setShowloadModal(false);
@@ -76,7 +76,7 @@ const Modal = () => {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        Check Balance
+        Authenticate Card
       </button>
       {showModal ? (
         <>
@@ -98,6 +98,16 @@ const Modal = () => {
                 {openCamera ? 
     <Camera
     onTakePhoto = { (dataUri) => { handleTakePhoto(dataUri); } }
+    idealFacingMode = {FACING_MODES.ENVIRONMENT}
+    idealResolution = {{width: 640, height: 480}}
+      imageType = {IMAGE_TYPES.JPG}
+      imageCompression = {0.97}
+      isMaxResolution = {true}
+      isImageMirror = {false}
+      isSilentMode = {false}
+      isDisplayStartCameraError = {true}
+      isFullscreen = {false}
+      sizeFactor = {1}
   />:
   
                 <div className="relative p-6 flex-auto">

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="text-center bg-gray-900 text-white">
   <div className="container px-6 pt-6">
-    <div className="flex justify-center mb-6">
+    {/* <div className="flex justify-center mb-6">
       <a href="#!" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
         <svg aria-hidden="true"
         focusable="false"
@@ -106,7 +106,7 @@ export default function Footer() {
           ></path>
         </svg>
       </a>
-    </div>
+    </div> */}
 
     <div>
       <form action="">
@@ -154,13 +154,12 @@ export default function Footer() {
 
     <div className="grid lg:grid-cols-3 md:grid-cols-2">
       <div className="mb-6">
-        <h5 className="uppercase font-bold mb-2.5">Checat</h5>
+        <h5 className="uppercase font-bold mb-2.5">GiftsCards shop</h5>
         
         <div className="mb-6">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      Find your card balance for a GiftsCards.shop Visa, Mastercard or any major retail gift card. To check your card balance 
+              you'll need the card number and security code if applicable.
       </p>
     </div>
         
@@ -189,14 +188,14 @@ export default function Footer() {
         <h5 className="uppercase font-bold mb-2.5">Useful Links</h5>
 
         <ul className="list-none mb-0">
-          <li>
+          {/* <li>
             <a href="#!" className="text-white">Help</a>
           </li>
           <li>
             <a href="#!" className="text-white">Brands</a>
-          </li>
+          </li> */}
           <li>
-            <a href="#!" className="text-white">All products</a>
+            <a href="/products" className="text-white">All products</a>
           </li>
           <li>
             <a href="#!" className="text-white">Blogs</a>
@@ -226,8 +225,8 @@ export default function Footer() {
   </div>
 
   <div className="text-center p-4" style={{backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
-    © 2021 Copyright:
-    <a className="text-white" href="https://tailwind-elements.com/">Checat</a>
+    © 2022 Copyright:
+    <a className="text-white" href="https://tailwind-elements.com/">GiftCards</a>
   </div>
 </footer>
   )

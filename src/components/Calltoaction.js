@@ -9,8 +9,8 @@ export default function Calltoaction() {
       <div className="text-3xl  tracking-tight text-gray-500 sm:text-4xl">
         <span className="block font-extrabold text-indigo-600">Verification</span>
         <p className="mt-3 text-base text-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+             Do you want to check if your card is authenticated or how much balance does it have ? 
+             Authenticate the card validation with us right now and it won't take up to a minute.
             </p>
       </div>
       <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
@@ -64,7 +64,9 @@ export default function Calltoaction() {
       <button type="button" class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg">Buy Gift Card </button>
     </div>
     <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">
-      This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.
+    Find your card balance for a GiftsCards.shop Visa, Mastercard or any major retail gift card. To check your card balance 
+              you'll need the card number and security code if applicable.
+    Shop your products accross all brands: Microsoft, Apple, Google and Aibnb and others poplular company you know.
     </p>
   </div>
 </main>

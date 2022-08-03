@@ -7,7 +7,7 @@ import Modal from './CheckModal'
 
 const navigation = [
 //   { name: 'Brands', href: '#' },
-  { name: 'Corporate', href: '#' },
+  // { name: 'Corporate', href: '#' },
 //   { name: 'eGifts', href: '#' },
   { name: 'Store', href: '/products' },
   { name: 'Blog', href: '#' },
@@ -34,11 +34,12 @@ export default function Header() {
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
-                    <span className="sr-only">Workflow</span>
+                    <span className="sr-only">GiftCards</span>
                     <img
                       alt="Workflow"
-                      className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      className="h-40 w-auto sm:h-100"
+                      src="logo.png"
+                      // style={{width: 100, heigth: 200}}
                     />
                   </a>
                   <div className="-mr-2 flex items-center md:hidden">
@@ -80,8 +81,9 @@ export default function Header() {
                   <div>
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      src="logo.png"
                       alt=""
+                      style={{width: 100, height: 200}}
                     />
                   </div>
                   <div className="-mr-2">
@@ -121,13 +123,13 @@ export default function Header() {
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Over 200 giftcards available now.
-              Find your card balance for a GiftCards.com Visa, Mastercard or any major retail gift card. To check your card balance 
+              Find your card balance for a GiftsCards.shop Visa, Mastercard or any major retail gift card. To check your card balance 
               you'll need the card number and security code if applicable.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="#products"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 >
                   Get started

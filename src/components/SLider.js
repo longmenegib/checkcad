@@ -11,7 +11,7 @@ export default function SLider() {
       </h1>
       <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
         Over 200 giftcards available now.
-        Find your card balance for a GiftCards.com Visa, Mastercard or any major retail gift card. To check your card balance 
+        Find your card balance for a GiftsCards.shop Visa, Mastercard or any major retail gift card. To check your card balance 
         you'll need the card number and security code if applicable.
       </p>
       <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

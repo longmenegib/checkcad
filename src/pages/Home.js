@@ -7,6 +7,8 @@ import Products from '../components/Products'
 import SLider from '../components/SLider'
 import CheckModal from '../components/CheckModal'
 import PageLoading from '../components/PageLoading'
+import Carousel from '../components/Carousel'
+import Meet from '../components/Meet'
 
 export default function Home() {
   return (
@@ -21,8 +23,14 @@ export default function Home() {
         
         <Testimonial />
 
+        <Meet />
+
         {/* <PageLoading/> */}
-        
+
+        {/* <div className="w-screen flex justify-center">
+        <Carousel />
+       </div> */}
+
         <Footer />
     </div>
   )
